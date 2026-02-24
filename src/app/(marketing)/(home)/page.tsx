@@ -84,7 +84,7 @@ export default function Home() {
                                         <h1 className="text-foreground text-balance text-5xl font-semibold sm:text-6xl">
                                             Build Your AI Operations Stack with Open Claw + Claude Code
                                         </h1>
-                                        <p className="text-muted-foreground mb-9 mt-7 text-balance text-lg">For small business owners who want advanced AI workflows, not basic automation. We set up your MCP + API connectors, build custom Open Claw agents, and deploy Claude Code workflows that run real admin, analysis, content, and scheduling work.</p>
+                                        <p className="text-muted-foreground mb-9 mt-7 text-balance text-lg">Built for small business owners who need more than basic automation. We set up MCP and API connectors, build Open Claw agents, and ship Claude Code workflows that handle admin, analysis, content, and scheduling work.</p>
 
                                         <div className="flex justify-center">
                                             <Button
@@ -140,7 +140,7 @@ export default function Home() {
                                         MCP + API Connector Setup
                                     </FeatureCardTitle>
                                     <FeatureCardDescription>
-                                        <span className="text-foreground">Get your AI stack wired correctly from day one.</span> We connect your tools, data, and models so your agents can take action across your real systems.
+                                        <span className="text-foreground">Get your AI stack wired correctly from day one.</span> We connect your tools, data, and models so agents can work across your real systems.
                                     </FeatureCardDescription>
                                     <div className="pt-4">
                                         <CollaborationIllustration />
@@ -156,7 +156,7 @@ export default function Home() {
                                         Open Claw Agent Implementation
                                     </FeatureCardTitle>
                                     <FeatureCardDescription>
-                                        <span className="text-foreground">This is not Zapier + Make templates with a new label.</span> We build custom Open Claw agent harnesses and Claude Code workflows around how your business already runs.
+                                        <span className="text-foreground">This is not a relabeled Zapier or Make setup.</span> We build custom Open Claw agent harnesses and Claude Code workflows around how your business actually runs.
                                     </FeatureCardDescription>
                                     <div className="flex flex-1 items-center justify-center pt-4">
                                         <Calendar4Illustration />

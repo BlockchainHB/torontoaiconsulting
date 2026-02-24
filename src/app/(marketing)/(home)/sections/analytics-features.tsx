@@ -14,7 +14,7 @@ export function AnalyticsFeatures() {
             <Container className="py-16 lg:py-24">
                 <div className="mx-auto max-w-2xl space-y-6 text-center">
                     <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">How It Works</h2>
-                    <p className="text-muted-foreground text-balance text-lg">A practical implementation path for owners adopting advanced AI: connect systems, launch agents, and ship workflows your team will actually use.</p>
+                    <p className="text-muted-foreground text-balance text-lg">A practical path for owners adopting advanced AI: connect systems, launch agents, and ship workflows your team will actually use.</p>
                 </div>
             </Container>
 
@@ -47,7 +47,7 @@ export function AnalyticsFeatures() {
                             className="flex h-full flex-col">
                             <div>
                                 <h3 className="text-foreground font-medium">Agent and Workflow Design</h3>
-                                <p className="text-muted-foreground mt-2 text-sm">We define your Open Claw agent roles, Claude Code workflow specs, and tool permissions so each workflow is usable, safe, and repeatable.</p>
+                                <p className="text-muted-foreground mt-2 text-sm">We define Open Claw agent roles, Claude Code workflow specs, and tool permissions so each workflow is usable, safe, and repeatable.</p>
                             </div>
                             <div className="relative mt-auto flex gap-4 pt-6">
                                 <DocumentIllustration />
@@ -64,7 +64,7 @@ export function AnalyticsFeatures() {
                             className="flex h-full flex-col">
                             <div>
                                 <h3 className="text-foreground font-medium">Connector and Access Setup</h3>
-                                <p className="text-muted-foreground mt-2 text-sm">We configure MCP and API connectors so your agents can read and act across the systems your business already depends on.</p>
+                                <p className="text-muted-foreground mt-2 text-sm">We configure MCP and API connectors so agents can read and act across the systems your business already depends on.</p>
                             </div>
                             <div className="mt-auto pt-6">
                                 <CurrencyIllustration />

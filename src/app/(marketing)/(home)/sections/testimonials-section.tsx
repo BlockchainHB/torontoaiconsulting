@@ -9,7 +9,7 @@ export function TestimonialsSection() {
                 <div className="mx-auto w-full max-w-5xl px-6 xl:px-0">
                     <div className="mx-auto max-w-2xl space-y-6 text-center">
                         <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">What Owners Want From AI Implementation</h2>
-                        <p className="text-muted-foreground text-balance text-lg">This is the before-and-after we target: less admin drag, faster execution, and workflows teams actually adopt.</p>
+                        <p className="text-muted-foreground text-balance text-lg">Here&apos;s the shift we aim for: less admin drag, faster execution, and workflows teams actually use.</p>
                     </div>
                 </div>
             </Container>
@@ -27,7 +27,7 @@ export function TestimonialsSection() {
                                 <div className="max-w-md">
                                     <p className="text-indigo-600 mb-4 text-sm font-semibold">Typical Outcome</p>
                                     <p className="text-foreground text-2xl font-normal">
-                                        Replace manual admin and handoffs with <span className="font-medium">agent-driven workflows across your existing tools</span> so owners and operators can focus on growth work.
+                                        Replace manual admin and handoffs with <span className="font-medium">agent workflows across your existing tools</span> so owners and operators can focus on growth work.
                                     </p>
                                 </div>
 
@@ -90,7 +90,7 @@ export function TestimonialsSection() {
                 <div className="@4xl:col-span-9 relative">
                     <FeatureCard>
                         <FeatureCardContent className="bg-card!">
-                            <p className='text-lg before:mr-1 before:font-serif before:content-["\201C"] after:ml-1 after:font-serif after:content-["\201D"] lg:text-xl'>Open Claw gives us the flexibility we wanted, and Claude Code gives us the execution layer we were missing. The combination finally made our workflows dependable.</p>
+                            <p className='text-lg before:mr-1 before:font-serif before:content-["\201C"] after:ml-1 after:font-serif after:content-["\201D"] lg:text-xl'>Open Claw gave us the flexibility we wanted, and Claude Code gave us the execution layer we were missing. The combination made our workflows dependable.</p>
                         </FeatureCardContent>
 
                         <FeatureCardCIllustration className="@4xl:px-0 @4xl:pb-0 @4xl:pt-0 px-0 pb-0 pt-0">

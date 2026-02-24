@@ -49,11 +49,11 @@ export function LogoCloud() {
                     <p
                         data-current={currentGroup}
                         className="text-muted-foreground mx-auto max-w-xl text-balance text-center md:text-lg lg:text-xl">
-                        We help small business owners run advanced AI operations with{' '}
+                        We help small business owners run advanced AI workflows with{' '}
                         <span className="in-data-[current=builder]:text-indigo-500 transition-colors duration-200">Open Claw agent systems,</span>{' '}
                         <span className="in-data-[current=results]:text-indigo-500 transition-colors duration-200">Claude Code execution workflows,</span>{' '}
                         <span className="in-data-[current=builder]:text-indigo-500 transition-colors duration-200">connected business tools,</span>{' '}
-                        and <span className="in-data-[current=results]:text-indigo-500 transition-colors duration-200">real implementation support</span>
+                        and <span className="in-data-[current=results]:text-indigo-500 transition-colors duration-200">hands-on implementation support</span>
                     </p>
                 </div>
             </div>

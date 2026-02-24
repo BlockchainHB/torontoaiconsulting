@@ -33,7 +33,7 @@ export function CallToAction() {
                     <div className="mx-auto max-w-xl text-center">
                         <div className="relative">
                             <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">Ready to Build Your AI Operations Layer?</h2>
-                            <p className="text-foreground mb-6 mt-4 text-balance text-lg">Book a 30-minute call to map your first Open Claw and Claude Code workflows. We&apos;ll identify high-impact use cases and the connector setup required to ship.</p>
+                            <p className="text-foreground mb-6 mt-4 text-balance text-lg">Book a 30-minute call to map your first Open Claw and Claude Code workflows. We&apos;ll identify the best starting use cases and the connector setup needed to ship.</p>
 
                             <Button
                                 asChild

@@ -29,7 +29,7 @@ export function EnterpriseFeatures() {
             <Container className="py-16 lg:py-24">
                 <div className="mx-auto max-w-2xl space-y-6 text-center">
                     <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">Why Owners Choose Copenhagen</h2>
-                    <p className="text-muted-foreground text-balance text-lg">You get practical implementation support for advanced AI operations, not generic automation playbooks.</p>
+                    <p className="text-muted-foreground text-balance text-lg">You get practical support for advanced AI operations, not generic automation playbooks.</p>
                 </div>
             </Container>
             <Container asGrid>
@@ -46,7 +46,7 @@ export function EnterpriseFeatures() {
                                     <TrendingUp className="text-muted-foreground m-auto size-4" />
                                 </div>
                                 <h3 className="text-2xl font-semibold">Built for Execution, Not Slide Decks</h3>
-                                <p className="text-muted-foreground text-balance">Most teams are stuck between simple no-code automations and overbuilt enterprise systems. We bridge that gap with Open Claw agent systems and Claude Code workflows tailored for SMB operations.</p>
+                                <p className="text-muted-foreground text-balance">Most teams are stuck between simple no-code automations and overly complex enterprise systems. We close that gap with Open Claw agents and Claude Code workflows tailored for SMB operations.</p>
                                 <ul className="w-full space-y-2">
                                     {['Custom agent harnesses, not cookie-cutter zaps', 'MCP/API connector setup and workflow deployment', 'Hands-on delivery with owner-friendly training'].map((feature, index) => (
                                         <li

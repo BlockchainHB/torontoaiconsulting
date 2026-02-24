@@ -14,7 +14,7 @@ export function IntegrationsSection() {
                 <div className="mx-auto w-full max-w-5xl px-6 xl:px-0">
                     <div className="mx-auto max-w-2xl space-y-6 text-center">
                         <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">Built Around Open Claw and Claude Code</h2>
-                        <p className="text-muted-foreground mb-8 text-balance text-lg">Your stack should be modular and durable. We combine Open Claw agent orchestration, Claude Code workflow execution, and leading AI models for business-ready automation.</p>
+                        <p className="text-muted-foreground mb-8 text-balance text-lg">Your stack should be flexible and reliable. We combine Open Claw orchestration, Claude Code workflows, and leading AI models for real business automation.</p>
 
                         <Button
                             variant="outline"

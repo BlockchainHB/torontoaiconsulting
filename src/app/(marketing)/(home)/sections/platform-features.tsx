@@ -77,10 +77,10 @@ export function PlatformFeatures() {
                             <Workflow className="text-muted-foreground m-auto size-4" />
                         </div>
 
-                        <h2 className="text-2xl font-semibold">Workflow Build and Deployment</h2>
+                        <h2 className="text-2xl font-semibold">Workflow Build + Deployment</h2>
 
                         <p className="text-muted-foreground text-balance">
-                            We design and ship <strong className="text-foreground font-semibold">production-ready workflows</strong> for admin tasks, reporting, scheduling, and customer operations with your real tools in the loop.
+                            We design and ship <strong className="text-foreground font-semibold">production workflows</strong> for admin tasks, reporting, scheduling, and customer operations using your existing tools.
                         </p>
 
                         <ul className="w-full space-y-2">
@@ -159,7 +159,7 @@ export function PlatformFeatures() {
                     <p className="text-indigo-600 text-sm font-semibold uppercase tracking-wider">From the Founder</p>
 
                     <div className="mt-6 lg:mt-12">
-                        <p className='text-xl *:leading-relaxed before:mr-1 before:content-["\201C"] after:ml-1 after:content-["\201D"] md:text-2xl'>Small business owners do not need another dashboard. They need systems that remove repetitive work. I help owners implement Open Claw and Claude Code workflows that run day-to-day operations with real business constraints.</p>
+                        <p className='text-xl *:leading-relaxed before:mr-1 before:content-["\201C"] after:ml-1 after:content-["\201D"] md:text-2xl'>Small business owners don&apos;t need another dashboard. They need systems that remove repetitive work. I help owners implement Open Claw and Claude Code workflows that run day-to-day operations with real business constraints.</p>
 
                         <div className="mt-12 flex items-center gap-3">
                             <div className="ring-foreground/10 aspect-square size-10 overflow-hidden rounded-lg border border-transparent shadow-md shadow-black/15 ring-1">

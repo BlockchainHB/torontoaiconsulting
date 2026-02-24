@@ -24,16 +24,16 @@ export function Manifesto() {
                                 Most AI consultants leave you with a <strong className="text-foreground font-medium">strategy doc and no implementation</strong>. Copenhagen is hands-on. We work inside your stack and <strong className="text-foreground font-medium">build workflows with your team</strong>.
                             </p>
                             <p>
-                                Small business owners are being asked to choose between basic no-code automations and overly complex enterprise tooling. You should not have to pick one extreme.
+                                Small business owners often have to choose between basic no-code automations and overly complex enterprise tooling. You shouldn&apos;t have to pick one extreme.
                             </p>
                             <p>
-                                We design <strong className="text-foreground font-medium">custom Open Claw agent harnesses</strong> and Claude Code workflows that match your real operations: client communication, reporting, scheduling, content pipelines, and recurring admin tasks.
+                                We design <strong className="text-foreground font-medium">custom Open Claw agent harnesses</strong> and Claude Code workflows that match your real operations, including client communication, reporting, scheduling, content pipelines, and recurring admin tasks.
                             </p>
                             <p>
                                 We also handle the hard setup work most teams skip: <strong className="text-foreground font-medium">MCP and API connectors, permissions, testing, and deployment readiness</strong>.
                             </p>
                             <p>
-                                The goal is simple: give owners a reliable AI operating layer that removes bottlenecks and keeps compounding over time.
+                                The goal is simple: give owners a reliable AI operating layer that removes bottlenecks and keeps getting better over time.
                             </p>
                         </div>
                     </motion.div>
