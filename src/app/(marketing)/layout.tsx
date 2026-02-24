@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Header from '@/components/header'
 import FooterSection from '@/components/footer'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
     title: 'Toronto AI Consulting | AI Consulting for Toronto Businesses',
@@ -15,8 +16,14 @@ export default function MarketingLayout({
 }>) {
     return (
         <>
+            <Link
+                href="#main-content"
+                className="skip-link">
+                Skip to Main Content
+            </Link>
             <Header />
             <main
+                id="main-content"
                 role="main"
                 className="bg-indigo-900/10">
                 {children}
