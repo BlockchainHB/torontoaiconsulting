@@ -62,7 +62,7 @@ export default function Header() {
                                 aria-label={isMobileMenuOpen == true ? 'Close Menu' : 'Open Menu'}
                                 aria-expanded={isMobileMenuOpen}
                                 aria-controls="mobile-nav-menu"
-                                className="relative z-20 -m-2.5 -mr-3 block cursor-pointer p-2.5 lg:hidden">
+                                className="relative z-20 -m-3 -mr-3 block cursor-pointer p-3 lg:hidden">
                                 <Menu
                                     aria-hidden="true"
                                     className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-5 duration-200"
@@ -102,7 +102,7 @@ export default function Header() {
                                         <Link
                                             href={link.href}
                                             onClick={() => setIsMobileMenuOpen(false)}
-                                            className="text-foreground block text-lg">
+                                            className="text-foreground flex min-h-11 items-center text-lg">
                                             {link.name}
                                         </Link>
                                     </li>

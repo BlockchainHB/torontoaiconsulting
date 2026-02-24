@@ -60,7 +60,7 @@ export default function FooterSection() {
                                         <Link
                                             key={index}
                                             href={item.href}
-                                            className="text-muted-foreground hover:text-primary block duration-150">
+                                            className="text-muted-foreground hover:text-primary flex min-h-11 items-center duration-150 sm:min-h-0">
                                             <span>{item.title}</span>
                                         </Link>
                                     ))}
@@ -78,7 +78,7 @@ export default function FooterSection() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="X/Twitter"
-                                    className="text-muted-foreground hover:text-primary block">
+                                    className="text-muted-foreground hover:text-primary -m-3 flex min-h-11 min-w-11 items-center justify-center p-3">
                                     <svg
                                         className="size-5"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ export default function FooterSection() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="GitHub"
-                                    className="text-muted-foreground hover:text-primary block">
+                                    className="text-muted-foreground hover:text-primary -m-3 flex min-h-11 min-w-11 items-center justify-center p-3">
                                     <svg
                                         className="size-5"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ export default function FooterSection() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Personal Website"
-                                    className="text-muted-foreground hover:text-primary block text-xs leading-5">
+                                    className="text-muted-foreground hover:text-primary flex min-h-11 items-center text-xs leading-5">
                                     hasaamb.com
                                 </Link>
                             </div>
