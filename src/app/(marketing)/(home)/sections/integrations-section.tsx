@@ -6,6 +6,7 @@ import { Openai } from '@/components/ui/svgs/openai'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Container } from '@/components/container'
+import { CAL_BOOKING_LINK } from '@/lib/const'
 
 export function IntegrationsSection() {
     return (
@@ -20,7 +21,7 @@ export function IntegrationsSection() {
                             variant="outline"
                             size="sm"
                             asChild>
-                            <Link href="#book-call">Plan My AI Stack</Link>
+                            <Link href={CAL_BOOKING_LINK}>Plan My AI Stack</Link>
                         </Button>
                     </div>
                 </div>

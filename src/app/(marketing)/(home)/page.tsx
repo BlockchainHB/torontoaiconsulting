@@ -15,6 +15,7 @@ import { Workflow, Users } from 'lucide-react'
 import { FeatureCardDescription, FeatureCardTitle } from '@/components/ui/feature-card'
 import { EnterpriseFeatures } from '@/app/(marketing)/(home)/sections/enterprise-features'
 import Image from 'next/image'
+import { CAL_BOOKING_LINK } from '@/lib/const'
 
 export default function Home() {
     return (
@@ -91,7 +92,7 @@ export default function Home() {
                                                 asChild
                                                 size="lg"
                                                 className="border-transparent px-5 text-sm shadow-xl shadow-indigo-900/40">
-                                                <Link href="#book-call">Book Your AI Workflow Call</Link>
+                                                <Link href={CAL_BOOKING_LINK}>Book Your AI Workflow Call</Link>
                                             </Button>
                                         </div>
                                         <span className="text-muted-foreground mt-4 block text-center text-sm">Toronto-based, remote-friendly, implementation-first</span>
