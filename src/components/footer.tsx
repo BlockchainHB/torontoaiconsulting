@@ -122,7 +122,7 @@ export default function FooterSection() {
                     <div
                         data-grid-content
                         className="flex flex-wrap items-center justify-between gap-4 p-6 lg:px-12">
-                        <span className="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} Copenhagen AI Consulting. All rights reserved.</span>
+                        <span className="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} Toronto AI Consulting. All rights reserved.</span>
 
                         <div className="ring-foreground/5 bg-card flex items-center gap-2 rounded-full border border-transparent py-1 pl-2 pr-4 shadow ring-1">
                             <div className="relative flex size-3">

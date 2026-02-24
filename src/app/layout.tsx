@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Copenhagen | AI Consulting for Toronto Businesses",
+  title: "Toronto AI Consulting | AI Consulting for Toronto Businesses",
   description: "Hands-on AI implementation for small and medium businesses in Toronto. Strategy, automation, and 1-on-1 consulting from a founder who's built $300K ARR SaaS and scaled Amazon brands.",
 };
 

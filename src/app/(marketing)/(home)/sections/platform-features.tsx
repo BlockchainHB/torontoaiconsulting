@@ -173,7 +173,7 @@ export function PlatformFeatures() {
 
                             <div className="space-y-px">
                                 <p className="text-sm font-medium">Hasaam B</p>
-                                <p className="text-muted-foreground text-xs">Founder, Copenhagen</p>
+                                <p className="text-muted-foreground text-xs">Founder, Toronto AI Consulting</p>
                             </div>
                         </div>
                     </div>

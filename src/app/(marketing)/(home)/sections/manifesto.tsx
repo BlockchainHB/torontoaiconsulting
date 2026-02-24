@@ -21,7 +21,7 @@ export function Manifesto() {
                         exit={{ height: '22rem' }}>
                         <div className="text-muted-foreground space-y-4 text-xl *:leading-relaxed md:text-2xl">
                             <p>
-                                Most AI consultants leave you with a <strong className="text-foreground font-medium">strategy doc and no implementation</strong>. Copenhagen is hands-on. We work inside your stack and <strong className="text-foreground font-medium">build workflows with your team</strong>.
+                                Most AI consultants leave you with a <strong className="text-foreground font-medium">strategy doc and no implementation</strong>. Toronto AI Consulting is hands-on. We work inside your stack and <strong className="text-foreground font-medium">build workflows with your team</strong>.
                             </p>
                             <p>
                                 Small business owners often have to choose between basic no-code automations and overly complex enterprise tooling. You shouldn&apos;t have to pick one extreme.
