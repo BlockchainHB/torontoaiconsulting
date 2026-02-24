@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { siteDescription, siteName, siteUrl } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +14,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Toronto AI Consulting | AI Consulting for Toronto Businesses",
-  description: "Hands-on AI implementation for small and medium businesses in Toronto. Strategy, automation, and 1-on-1 consulting from a founder who's built $300K ARR SaaS and scaled Amazon brands.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${siteName} | AI Consulting for Toronto Businesses`,
+    template: `%s | ${siteName}`,
+  },
+  description: siteDescription,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: `${siteName} | AI Consulting for Toronto Businesses`,
+    description: siteDescription,
+    siteName,
+    locale: "en_CA",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteName} | AI Consulting for Toronto Businesses`,
+    description: siteDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
