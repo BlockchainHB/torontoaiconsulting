@@ -30,11 +30,13 @@ export const metadata: Metadata = {
     description: siteDescription,
     siteName,
     locale: "en_CA",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteName} | AI Consulting for Toronto Businesses`,
     description: siteDescription,
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
