@@ -12,7 +12,7 @@ export const Flow9Illustration = () => {
     return (
         <div
             aria-hidden
-            className="relative flex w-fit items-center justify-center">
+            className="relative flex w-full max-w-[19rem] items-center justify-center sm:max-w-[22rem] md:w-fit md:max-w-none">
             <style jsx>{`
                 @keyframes model-flow {
                     0% {
@@ -28,7 +28,7 @@ export const Flow9Illustration = () => {
                 viewBox="0 0 250 251"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-86 text-foreground/10 absolute inset-0 my-auto w-full">
+                className="text-foreground/10 absolute inset-0 my-auto h-[13.5rem] w-full sm:h-[15.5rem] md:h-86">
                 <path
                     d="M0.5 0.5H98.22C115.155 0.5 131.18 8.16351 141.811 21.3459L209.62 105.429C219.346 117.489 234.007 124.5 249.5 124.5"
                     stroke="currentColor"
@@ -158,37 +158,37 @@ export const Flow9Illustration = () => {
                 </defs>
             </svg>
 
-            <div className="relative flex items-center gap-44">
-                <div className="flex items-center gap-8">
-                    <div className="flex h-96 flex-col justify-between">
-                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-10 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-5">
+            <div className="relative flex items-center gap-10 sm:gap-16 md:gap-44">
+                <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
+                    <div className="flex h-60 flex-col justify-between sm:h-72 md:h-96">
+                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-8 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-4 md:size-10 md:*:size-5">
                             <Gemini />
                         </div>
 
-                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-10 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-5">
+                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-8 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-4 md:size-10 md:*:size-5">
                             <Openai className="*:fill-foreground" />
                         </div>
                     </div>
-                    <div className="flex h-60 flex-col justify-between gap-10">
-                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-10 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-5">
+                    <div className="flex h-40 flex-col justify-between gap-6 sm:h-48 sm:gap-8 md:h-60 md:gap-10">
+                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-8 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-4 md:size-10 md:*:size-5">
                             <MistralAi />
                         </div>
-                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-10 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-5">
+                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-8 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-4 md:size-10 md:*:size-5">
                             <Claude />
                         </div>
                     </div>
-                    <div className="flex h-28 flex-col justify-between">
-                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-10 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-5">
+                    <div className="flex h-20 flex-col justify-between sm:h-24 md:h-28">
+                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-8 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-4 md:size-10 md:*:size-5">
                             <QwenLight />
                         </div>
 
-                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-10 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-5">
+                        <div className="ring-border-illustration bg-illustration/50 shadow-black/6.5 flex size-8 rounded-full shadow-md ring-1 backdrop-blur *:m-auto *:size-4 md:size-10 md:*:size-5">
                             <Deepseek />
                         </div>
                     </div>
                 </div>
-                <div className="corner-squircle dark:bg-illustration/75 dark:ring-border-illustration relative flex size-16 translate-x-4 items-center justify-center rounded-3xl bg-black/75 shadow-xl shadow-black/20 ring-1 ring-black backdrop-blur">
-                    <LogoIcon className="size-6" />
+                <div className="corner-squircle dark:bg-illustration/75 dark:ring-border-illustration relative flex size-12 translate-x-0 items-center justify-center rounded-3xl bg-black/75 shadow-xl shadow-black/20 ring-1 ring-black backdrop-blur sm:size-14 sm:translate-x-2 md:size-16 md:translate-x-4">
+                    <LogoIcon className="size-4 sm:size-5 md:size-6" />
                 </div>
             </div>
         </div>
