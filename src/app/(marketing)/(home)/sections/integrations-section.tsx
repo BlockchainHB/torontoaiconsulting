@@ -13,14 +13,14 @@ export function IntegrationsSection() {
             <Container className="py-16 lg:py-24">
                 <div className="mx-auto w-full max-w-5xl px-6 xl:px-0">
                     <div className="mx-auto max-w-2xl space-y-6 text-center">
-                        <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">We Work With the Best AI Tools</h2>
-                        <p className="text-muted-foreground mb-8 text-balance text-lg">We&apos;re not locked into one platform. We evaluate and implement the right AI tools for your specific business needs — from LLMs to automation platforms.</p>
+                        <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">Built Around Open Claw and Claude Code</h2>
+                        <p className="text-muted-foreground mb-8 text-balance text-lg">Your stack should be modular and durable. We combine Open Claw agent orchestration, Claude Code workflow execution, and leading AI models for business-ready automation.</p>
 
                         <Button
                             variant="outline"
                             size="sm"
                             asChild>
-                            <Link href="#book-call">Discuss Your Stack</Link>
+                            <Link href="#book-call">Plan My AI Stack</Link>
                         </Button>
                     </div>
                 </div>
@@ -38,13 +38,13 @@ export function IntegrationsSection() {
                         <div
                             data-grid-content
                             className="p-4! col-span-2 text-center">
-                            <span className="text-muted-foreground font-mono text-sm">Platforms</span>
+                            <span className="text-muted-foreground font-mono text-sm">Agent Layer</span>
                         </div>
 
                         <div
                             data-grid-content
                             className="@max-lg:row-start-3 p-4! col-span-2 text-center">
-                            <span className="text-muted-foreground font-mono text-sm">AI Models</span>
+                            <span className="text-muted-foreground font-mono text-sm">Model Layer</span>
                         </div>
 
                         <Integration label="OpenClaw">

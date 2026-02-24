@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Check, Search, Workflow, Handshake } from 'lucide-react'
 import { HASAAM_AVATAR } from '@/lib/const'
+import Image from 'next/image'
 
 export function PlatformFeatures() {
     return (
@@ -21,14 +22,14 @@ export function PlatformFeatures() {
                             <Search className="text-muted-foreground m-auto size-4" />
                         </div>
 
-                        <h2 className="text-2xl font-semibold">AI Strategy & Audit</h2>
+                        <h2 className="text-2xl font-semibold">AI Ops Audit for Owners</h2>
 
                         <p className="text-muted-foreground text-balance">
-                            We start with a deep dive into your <strong className="text-foreground font-semibold">current processes and tech stack</strong>. We identify where AI can save you the most time and money — no fluff, just actionable opportunities.
+                            We map your <strong className="text-foreground font-semibold">admin load, data flow, and team bottlenecks</strong> so you can prioritize the automations that actually free up owner time.
                         </p>
 
                         <ul className="w-full space-y-2">
-                            {['Process & workflow audit', 'AI opportunity mapping', 'ROI projections for each initiative'].map((feature, index) => (
+                            {['Process map of repetitive work', 'Priority use-case plan by impact', 'Clear build roadmap for your team'].map((feature, index) => (
                                 <li
                                     key={index}
                                     className="text-muted-foreground flex items-center gap-2">
@@ -43,7 +44,7 @@ export function PlatformFeatures() {
                             variant="outline"
                             size="sm"
                             className="mt-auto w-fit">
-                            <Link href="#book-call">Get Started</Link>
+                            <Link href="#book-call">Map My Workflow Gaps</Link>
                         </Button>
                     </FeatureCardContent>
                 </FeatureCard>
@@ -76,14 +77,14 @@ export function PlatformFeatures() {
                             <Workflow className="text-muted-foreground m-auto size-4" />
                         </div>
 
-                        <h2 className="text-2xl font-semibold">Workflow Automation</h2>
+                        <h2 className="text-2xl font-semibold">Workflow Build and Deployment</h2>
 
                         <p className="text-muted-foreground text-balance">
-                            We don&apos;t just recommend tools — we <strong className="text-foreground font-semibold">build and deploy automations</strong> that work. From lead capture to customer support, we wire up AI workflows that run while you sleep.
+                            We design and ship <strong className="text-foreground font-semibold">production-ready workflows</strong> for admin tasks, reporting, scheduling, and customer operations with your real tools in the loop.
                         </p>
 
                         <ul className="w-full space-y-2">
-                            {['Custom AI workflow design', 'Tool selection & integration', 'Team training & handoff'].map((feature, index) => (
+                            {['Automation for repetitive admin tasks', 'Cross-tool actions via MCP + APIs', 'Team handoff with usable playbooks'].map((feature, index) => (
                                 <li
                                     key={index}
                                     className="text-muted-foreground flex items-center gap-2">
@@ -98,7 +99,7 @@ export function PlatformFeatures() {
                             variant="outline"
                             size="sm"
                             className="mt-auto w-fit">
-                            <Link href="#book-call">Get Started</Link>
+                            <Link href="#book-call">Build My First Workflow</Link>
                         </Button>
                     </FeatureCardContent>
                 </FeatureCard>
@@ -115,14 +116,14 @@ export function PlatformFeatures() {
                             <Handshake className="text-muted-foreground m-auto size-4" />
                         </div>
 
-                        <h2 className="text-2xl font-semibold">1-on-1 Implementation</h2>
+                        <h2 className="text-2xl font-semibold">Open Claw + Claude Code Agents</h2>
 
                         <p className="text-muted-foreground text-balance">
-                            We build you a <strong className="text-foreground font-semibold">custom library of Claude Code workflows and skills</strong> tailored to your business. From drafting contracts to generating reports — your team gets AI agents that actually know your processes.
+                            We create a <strong className="text-foreground font-semibold">custom Open Claw agent harness</strong> plus Claude Code workflows so your business has reusable agents for analysis, content, scheduling, and ops support.
                         </p>
 
                         <ul className="w-full space-y-2">
-                            {['Custom Claude Code skills for your ops', 'AI agents trained on your workflows', 'Ongoing optimization & new skills added'].map((feature, index) => (
+                            {['Custom agent roles and guardrails', 'Reusable prompts, tools, and connectors', 'Continuous iteration as your process changes'].map((feature, index) => (
                                 <li
                                     key={index}
                                     className="text-muted-foreground flex items-center gap-2">
@@ -137,7 +138,7 @@ export function PlatformFeatures() {
                             variant="outline"
                             size="sm"
                             className="mt-auto w-fit">
-                            <Link href="#book-call">Get Started</Link>
+                            <Link href="#book-call">Design My Agent Stack</Link>
                         </Button>
                     </FeatureCardContent>
                 </FeatureCard>
@@ -158,13 +159,15 @@ export function PlatformFeatures() {
                     <p className="text-indigo-600 text-sm font-semibold uppercase tracking-wider">From the Founder</p>
 
                     <div className="mt-6 lg:mt-12">
-                        <p className='text-xl *:leading-relaxed before:mr-1 before:content-["\201C"] after:ml-1 after:content-["\201D"] md:text-2xl'>I&apos;ve been on both sides — running teams in enterprise and building businesses from scratch. The biggest unlock for any SMB right now is AI, but most owners don&apos;t know where to start. That&apos;s exactly what I help with.</p>
+                        <p className='text-xl *:leading-relaxed before:mr-1 before:content-["\201C"] after:ml-1 after:content-["\201D"] md:text-2xl'>Small business owners do not need another dashboard. They need systems that remove repetitive work. I help owners implement Open Claw and Claude Code workflows that run day-to-day operations with real business constraints.</p>
 
                         <div className="mt-12 flex items-center gap-3">
                             <div className="ring-foreground/10 aspect-square size-10 overflow-hidden rounded-lg border border-transparent shadow-md shadow-black/15 ring-1">
-                                <img
+                                <Image
                                     src={HASAAM_AVATAR}
                                     alt="Hasaam B"
+                                    width={40}
+                                    height={40}
                                 />
                             </div>
 

@@ -7,16 +7,16 @@ import { Container } from '@/components/container'
 
 const credentialGroups: Record<string, { icon: React.ElementType; label: string }[]> = {
     builder: [
-        { icon: Brain, label: '$300K ARR SaaS' },
-        { icon: Store, label: 'Amazon Brands' },
-        { icon: Briefcase, label: 'Enterprise HR' },
-        { icon: Rocket, label: '1-on-1 Consulting' },
+        { icon: Brain, label: 'Open Claw Agents' },
+        { icon: Store, label: 'Claude Code Workflows' },
+        { icon: Briefcase, label: 'MCP + API Connectors' },
+        { icon: Rocket, label: 'SMB Ops Automation' },
     ],
     results: [
-        { icon: Rocket, label: 'Same-Week ROI' },
-        { icon: Brain, label: 'AI-First Approach' },
-        { icon: Store, label: 'Built for SMBs' },
-        { icon: Briefcase, label: 'Toronto Based' },
+        { icon: Rocket, label: 'Admin Work Offloaded' },
+        { icon: Brain, label: 'Data + Content Flows' },
+        { icon: Store, label: 'Scheduling Automation' },
+        { icon: Briefcase, label: 'Virtual Assistant Ops' },
     ],
 }
 
@@ -49,11 +49,11 @@ export function LogoCloud() {
                     <p
                         data-current={currentGroup}
                         className="text-muted-foreground mx-auto max-w-xl text-balance text-center md:text-lg lg:text-xl">
-                        Built by a founder with experience across{' '}
-                        <span className="in-data-[current=builder]:text-indigo-500 transition-colors duration-200">Enterprise Operations,</span>{' '}
-                        <span className="in-data-[current=results]:text-indigo-500 transition-colors duration-200">E-commerce,</span>{' '}
-                        <span className="in-data-[current=builder]:text-indigo-500 transition-colors duration-200">AI Product Development,</span>{' '}
-                        and <span className="in-data-[current=results]:text-indigo-500 transition-colors duration-200">Hands-On Consulting</span>
+                        We help small business owners run advanced AI operations with{' '}
+                        <span className="in-data-[current=builder]:text-indigo-500 transition-colors duration-200">Open Claw agent systems,</span>{' '}
+                        <span className="in-data-[current=results]:text-indigo-500 transition-colors duration-200">Claude Code execution workflows,</span>{' '}
+                        <span className="in-data-[current=builder]:text-indigo-500 transition-colors duration-200">connected business tools,</span>{' '}
+                        and <span className="in-data-[current=results]:text-indigo-500 transition-colors duration-200">real implementation support</span>
                     </p>
                 </div>
             </div>

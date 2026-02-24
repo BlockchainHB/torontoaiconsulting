@@ -32,16 +32,16 @@ export function CallToAction() {
                 <div className="@3xl:p-20 @lg:p-8 relative overflow-hidden p-6">
                     <div className="mx-auto max-w-xl text-center">
                         <div className="relative">
-                            <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">Ready to Implement AI?</h2>
-                            <p className="text-foreground mb-6 mt-4 text-balance text-lg">Book a free 30-minute strategy call. We&apos;ll map out exactly how AI can save you time and grow your business — no obligation, no sales pitch.</p>
+                            <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">Ready to Build Your AI Operations Layer?</h2>
+                            <p className="text-foreground mb-6 mt-4 text-balance text-lg">Book a 30-minute call to map your first Open Claw and Claude Code workflows. We&apos;ll identify high-impact use cases and the connector setup required to ship.</p>
 
                             <Button
                                 asChild
                                 size="lg"
                                 className="border-transparent px-5 text-sm shadow-xl shadow-indigo-900/40">
-                                <Link href="#">Book Your Free Strategy Call</Link>
+                                <Link href="#">Book My Workflow Call</Link>
                             </Button>
-                            <span className="text-foreground/75 mt-3 block text-center text-sm">Toronto in-person or video call available</span>
+                            <span className="text-foreground/75 mt-3 block text-center text-sm">Built for owner-led SMB teams using advanced AI tools</span>
                         </div>
                     </div>
                 </div>

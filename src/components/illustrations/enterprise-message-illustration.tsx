@@ -27,7 +27,7 @@ export const EnterpriseMessageIllustration = () => (
                         <span className="text-muted-foreground text-xs">M. Irung</span>
                     </div>
 
-                    <div className="rounded-(--radius) bg-background ring-foreground/5 mt-1.5 w-4/5 rounded-tl p-3 text-xs shadow-md shadow-black/5 ring-1">Hey, I'm having trouble with my account.</div>
+                    <div className="rounded-(--radius) bg-background ring-foreground/5 mt-1.5 w-4/5 rounded-tl p-3 text-xs shadow-md shadow-black/5 ring-1">Hey, I&apos;m having trouble with my account.</div>
                 </div>
             </div>
 

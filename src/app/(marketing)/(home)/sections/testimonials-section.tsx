@@ -8,8 +8,8 @@ export function TestimonialsSection() {
             <Container className="py-16 lg:py-24">
                 <div className="mx-auto w-full max-w-5xl px-6 xl:px-0">
                     <div className="mx-auto max-w-2xl space-y-6 text-center">
-                        <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">What Business Owners Are Saying</h2>
-                        <p className="text-muted-foreground text-balance text-lg">Early clients are already seeing results from AI implementation — here&apos;s what they have to say.</p>
+                        <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">What Owners Want From AI Implementation</h2>
+                        <p className="text-muted-foreground text-balance text-lg">This is the before-and-after we target: less admin drag, faster execution, and workflows teams actually adopt.</p>
                     </div>
                 </div>
             </Container>
@@ -25,13 +25,13 @@ export function TestimonialsSection() {
                         <FeatureCardContent className="bg-card! relative">
                             <div className="z-1 relative">
                                 <div className="max-w-md">
-                                    <p className="text-indigo-600 mb-4 text-sm font-semibold">Featured Result</p>
+                                    <p className="text-indigo-600 mb-4 text-sm font-semibold">Typical Outcome</p>
                                     <p className="text-foreground text-2xl font-normal">
-                                        After working with Copenhagen, we <span className="font-medium">automated our lead follow-up process entirely</span> — saving 15+ hours per week and increasing our response rate by 3x.
+                                        Replace manual admin and handoffs with <span className="font-medium">agent-driven workflows across your existing tools</span> so owners and operators can focus on growth work.
                                     </p>
                                 </div>
 
-                                <p className='mt-12 max-w-lg text-xl before:mr-1 before:font-serif before:content-["\201C"] after:ml-1 after:font-serif after:content-["\201D"]'>Hasaam didn&apos;t just tell us what to do — he sat down and built it with us. The difference between this and every other consulting experience I&apos;ve had is night and day.</p>
+                                <p className='mt-12 max-w-lg text-xl before:mr-1 before:font-serif before:content-["\201C"] after:ml-1 after:font-serif after:content-["\201D"]'>You don&apos;t need another consultant handing you docs. You need someone to implement Open Claw and Claude Code workflows with your team and make sure they run in production.</p>
                             </div>
                             <div className="dither mask-radial-from-35% mask-radial-at-right mask-radial-[100%_90%] absolute inset-y-1 left-1/3 right-1 overflow-hidden rounded-xl">
                                 <Image
@@ -64,8 +64,8 @@ export function TestimonialsSection() {
                                     </div>
 
                                     <div className="text-base *:block">
-                                        <span className="text-foreground font-medium">Toronto Business Owner</span>
-                                        <span className="text-muted-foreground text-sm">E-commerce, GTA</span>
+                                        <span className="text-foreground font-medium">Built for SMB Operators</span>
+                                        <span className="text-muted-foreground text-sm">Owner-led teams</span>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@ export function TestimonialsSection() {
                 <div className="@4xl:col-span-9 relative">
                     <FeatureCard>
                         <FeatureCardContent className="bg-card!">
-                            <p className='text-lg before:mr-1 before:font-serif before:content-["\201C"] after:ml-1 after:font-serif after:content-["\201D"] lg:text-xl'>We had been putting off AI for months because it felt overwhelming. Hasaam made it simple — we went from zero to a fully automated customer onboarding flow in one week.</p>
+                            <p className='text-lg before:mr-1 before:font-serif before:content-["\201C"] after:ml-1 after:font-serif after:content-["\201D"] lg:text-xl'>Open Claw gives us the flexibility we wanted, and Claude Code gives us the execution layer we were missing. The combination finally made our workflows dependable.</p>
                         </FeatureCardContent>
 
                         <FeatureCardCIllustration className="@4xl:px-0 @4xl:pb-0 @4xl:pt-0 px-0 pb-0 pt-0">
@@ -100,8 +100,8 @@ export function TestimonialsSection() {
                                         SK
                                     </div>
                                     <div className="text-base *:block">
-                                        <span className="text-foreground font-medium">Course Creator</span>
-                                        <span className="text-muted-foreground text-sm">Online Education</span>
+                                        <span className="text-foreground font-medium">Use Case</span>
+                                        <span className="text-muted-foreground text-sm">Content + scheduling automation</span>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ export function TestimonialsSection() {
                 <div className="@4xl:col-span-9">
                     <FeatureCard className="grid-rows-[1fr_auto]">
                         <FeatureCardContent className="bg-background!">
-                            <p className='text-lg before:mr-1 before:font-serif before:content-["\201C"] after:ml-1 after:font-serif after:content-["\201D"] lg:text-xl'>As a non-technical founder, I was skeptical about AI consulting. But Hasaam speaks my language — business first, tech second. He understood our pain points immediately and built solutions that our whole team could use.</p>
+                            <p className='text-lg before:mr-1 before:font-serif before:content-["\201C"] after:ml-1 after:font-serif after:content-["\201D"] lg:text-xl'>This is not a Zapier or Make clone with new branding. It&apos;s a custom agent system designed around our operating model, with implementation support our team could follow.</p>
                         </FeatureCardContent>
 
                         <FeatureCardCIllustration className="bg-background! @4xl:px-0 @4xl:pb-0 @4xl:pt-0 px-0 pb-0 pt-0">
@@ -126,8 +126,8 @@ export function TestimonialsSection() {
                                         RM
                                     </div>
                                     <div className="text-base *:block">
-                                        <span className="text-foreground font-medium">Retail Business Owner</span>
-                                        <span className="text-foreground/65 text-sm">Markham, ON</span>
+                                        <span className="text-foreground font-medium">Use Case</span>
+                                        <span className="text-foreground/65 text-sm">Admin + data workflow automation</span>
                                     </div>
                                 </div>
                             </div>

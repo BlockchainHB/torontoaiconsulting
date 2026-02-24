@@ -47,7 +47,7 @@ export default function FeaturesSection12() {
                     <div className="@3xl:col-span-3 @3xl:gap-12 @3xl:border-r row-span-2 grid grid-rows-subgrid gap-8 border-t">
                         <div>
                             <h3 className="text-foreground text-xl font-semibold">Automated Scheduling</h3>
-                            <p className="text-muted-foreground mt-4 text-lg">Streamline your calendar with intelligent scheduling that finds the perfect meeting times based on everyone's availability.</p>
+                            <p className="text-muted-foreground mt-4 text-lg">Streamline your calendar with intelligent scheduling that finds the perfect meeting times based on everyone&apos;s availability.</p>
                         </div>
                         <ScheduleIllustration className="pl-9 pt-12" />
                     </div>

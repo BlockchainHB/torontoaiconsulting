@@ -1,5 +1,6 @@
 'use client'
 import DottedMap from 'dotted-map'
+import Image from 'next/image'
 
 const pins = [
     { lat: 40.73061, lng: -73.935242 },
@@ -67,9 +68,12 @@ export const Map = () => {
     })
 
     return (
-        <img
+        <Image
             src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
             alt="tailark stats map"
+            unoptimized
+            width={880}
+            height={440}
         />
     )
 }

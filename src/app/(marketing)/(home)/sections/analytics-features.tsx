@@ -14,7 +14,7 @@ export function AnalyticsFeatures() {
             <Container className="py-16 lg:py-24">
                 <div className="mx-auto max-w-2xl space-y-6 text-center">
                     <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">How It Works</h2>
-                    <p className="text-muted-foreground text-balance text-lg">From first call to live AI workflows — a clear, hands-on process built for business owners who want results, not theory.</p>
+                    <p className="text-muted-foreground text-balance text-lg">A practical implementation path for owners adopting advanced AI: connect systems, launch agents, and ship workflows your team will actually use.</p>
                 </div>
             </Container>
 
@@ -33,8 +33,8 @@ export function AnalyticsFeatures() {
                             data-grid-content
                             className="flex h-full flex-col">
                             <div>
-                                <h3 className="text-foreground font-medium">Intake & Discovery</h3>
-                                <p className="text-muted-foreground mt-2 text-sm">We start with a deep dive into your business — your processes, tools, and pain points. You share what&apos;s slowing you down, and we map every opportunity for AI.</p>
+                                <h3 className="text-foreground font-medium">Business Workflow Intake</h3>
+                                <p className="text-muted-foreground mt-2 text-sm">We review your current operations and identify repetitive admin, reporting, scheduling, and communication tasks that should be automated first.</p>
                             </div>
                             <div className="mt-auto pt-6">
                                 <ReplyIllustration />
@@ -46,8 +46,8 @@ export function AnalyticsFeatures() {
                             data-grid-content
                             className="flex h-full flex-col">
                             <div>
-                                <h3 className="text-foreground font-medium">Workflow & Skills Design</h3>
-                                <p className="text-muted-foreground mt-2 text-sm">We blueprint custom AI workflows and Claude Code skills tailored to your exact operations — from contracts to reporting to client comms.</p>
+                                <h3 className="text-foreground font-medium">Agent and Workflow Design</h3>
+                                <p className="text-muted-foreground mt-2 text-sm">We define your Open Claw agent roles, Claude Code workflow specs, and tool permissions so each workflow is usable, safe, and repeatable.</p>
                             </div>
                             <div className="relative mt-auto flex gap-4 pt-6">
                                 <DocumentIllustration />
@@ -63,8 +63,8 @@ export function AnalyticsFeatures() {
                             data-grid-content
                             className="flex h-full flex-col">
                             <div>
-                                <h3 className="text-foreground font-medium">ROI & Cost Mapping</h3>
-                                <p className="text-muted-foreground mt-2 text-sm">See exactly where AI saves you time and money with clear projections before we build anything.</p>
+                                <h3 className="text-foreground font-medium">Connector and Access Setup</h3>
+                                <p className="text-muted-foreground mt-2 text-sm">We configure MCP and API connectors so your agents can read and act across the systems your business already depends on.</p>
                             </div>
                             <div className="mt-auto pt-6">
                                 <CurrencyIllustration />
@@ -76,8 +76,8 @@ export function AnalyticsFeatures() {
                             data-grid-content
                             className="flex h-full flex-col">
                             <div>
-                                <h3 className="text-foreground font-medium">AI Agent Setup</h3>
-                                <p className="text-muted-foreground mt-2 text-sm">We build and deploy your AI agents hands-on — chatbots, automations, and intelligent workflows that handle real tasks so your team can focus on growth.</p>
+                                <h3 className="text-foreground font-medium">Build and Deploy</h3>
+                                <p className="text-muted-foreground mt-2 text-sm">We ship production workflows for data analysis, content creation, scheduling, and virtual assistant tasks with measurable outputs.</p>
                             </div>
                             <div className="mt-auto pt-6">
                                 <ChatIllustration />
@@ -91,8 +91,8 @@ export function AnalyticsFeatures() {
                             data-grid-content
                             className="flex h-full flex-col">
                             <div>
-                                <h3 className="text-foreground font-medium">Ongoing Optimization</h3>
-                                <p className="text-muted-foreground mt-2 text-sm">Regular sessions to fine-tune your AI workflows, add new skills, and adapt as your business evolves. We stay hands-on so nothing stalls.</p>
+                                <h3 className="text-foreground font-medium">Team Enablement</h3>
+                                <p className="text-muted-foreground mt-2 text-sm">We train your team on exactly how to run each workflow so automation stays adopted instead of becoming shelfware.</p>
                             </div>
                             <div className="mt-auto pt-6">
                                 <ScheduleIllustration className="pl-9 pt-6" />
@@ -104,8 +104,8 @@ export function AnalyticsFeatures() {
                             data-grid-content
                             className="flex h-full flex-col">
                             <div>
-                                <h3 className="text-foreground font-medium">Deployment & Monitoring</h3>
-                                <p className="text-muted-foreground mt-2 text-sm">Your AI workflows go live with full monitoring. We track performance, catch issues early, and make sure everything runs smoothly from day one.</p>
+                                <h3 className="text-foreground font-medium">Optimization and Expansion</h3>
+                                <p className="text-muted-foreground mt-2 text-sm">After launch, we tune workflows, improve reliability, and add new agent capabilities as your business goals evolve.</p>
                             </div>
                             <div className="mt-auto pt-6">
                                 <FileUploadIllustration variant="mixed" />

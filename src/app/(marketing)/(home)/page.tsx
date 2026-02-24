@@ -82,19 +82,19 @@ export default function Home() {
                                     className="py-12 text-center">
                                     <div className="relative mx-auto max-w-3xl text-center">
                                         <h1 className="text-foreground text-balance text-5xl font-semibold sm:text-6xl">
-                                            Implement AI Into Your Business
+                                            Build Your AI Operations Stack with Open Claw + Claude Code
                                         </h1>
-                                        <p className="text-muted-foreground mb-9 mt-7 text-balance text-lg">Toronto&apos;s hands-on AI consulting for small and medium businesses. From strategy to implementation, we work 1-on-1 with founders to automate workflows and unlock growth.</p>
+                                        <p className="text-muted-foreground mb-9 mt-7 text-balance text-lg">For small business owners who want advanced AI workflows, not basic automation. We set up your MCP + API connectors, build custom Open Claw agents, and deploy Claude Code workflows that run real admin, analysis, content, and scheduling work.</p>
 
                                         <div className="flex justify-center">
                                             <Button
                                                 asChild
                                                 size="lg"
                                                 className="border-transparent px-5 text-sm shadow-xl shadow-indigo-900/40">
-                                                <Link href="#book-call">Book a Free Strategy Call</Link>
+                                                <Link href="#book-call">Book Your AI Workflow Call</Link>
                                             </Button>
                                         </div>
-                                        <span className="text-muted-foreground mt-4 block text-center text-sm">In-person in Toronto or remote via video call</span>
+                                        <span className="text-muted-foreground mt-4 block text-center text-sm">Toronto-based, remote-friendly, implementation-first</span>
                                     </div>
                                 </div>
                             </div>
@@ -137,10 +137,10 @@ export default function Home() {
                                     className="@4xl:px-12 @4xl:py-12 flex h-full flex-col space-y-6 px-6 py-6">
                                     <FeatureCardTitle>
                                         <Workflow className="size-4" />
-                                        AI Tools & Workflows
+                                        MCP + API Connector Setup
                                     </FeatureCardTitle>
                                     <FeatureCardDescription>
-                                        <span className="text-foreground">Get hands-on help choosing and implementing AI tools.</span> We audit your processes and build custom workflows that save hours every week.
+                                        <span className="text-foreground">Get your AI stack wired correctly from day one.</span> We connect your tools, data, and models so your agents can take action across your real systems.
                                     </FeatureCardDescription>
                                     <div className="pt-4">
                                         <CollaborationIllustration />
@@ -153,10 +153,10 @@ export default function Home() {
                                     className="@4xl:px-12 @4xl:py-12 flex h-full flex-col space-y-6 px-6 py-6">
                                     <FeatureCardTitle>
                                         <Users className="size-4" />
-                                        1-on-1 Consulting
+                                        Open Claw Agent Implementation
                                     </FeatureCardTitle>
                                     <FeatureCardDescription>
-                                        <span className="text-foreground">Real guidance from someone who&apos;s built businesses.</span> In-person in Toronto or on video call — not generic advice from a textbook.
+                                        <span className="text-foreground">This is not Zapier + Make templates with a new label.</span> We build custom Open Claw agent harnesses and Claude Code workflows around how your business already runs.
                                     </FeatureCardDescription>
                                     <div className="flex flex-1 items-center justify-center pt-4">
                                         <Calendar4Illustration />

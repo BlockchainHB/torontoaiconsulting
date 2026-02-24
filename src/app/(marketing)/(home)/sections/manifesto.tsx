@@ -21,19 +21,19 @@ export function Manifesto() {
                         exit={{ height: '22rem' }}>
                         <div className="text-muted-foreground space-y-4 text-xl *:leading-relaxed md:text-2xl">
                             <p>
-                                Most AI consultants sell you a <strong className="text-foreground font-medium">strategy deck</strong> and disappear. I&apos;m not most consultants. I sit down with you — in person or on a call — and we <strong className="text-foreground font-medium">actually build the thing together</strong>.
+                                Most AI consultants leave you with a <strong className="text-foreground font-medium">strategy doc and no implementation</strong>. Copenhagen is hands-on. We work inside your stack and <strong className="text-foreground font-medium">build workflows with your team</strong>.
                             </p>
                             <p>
-                                I started my career in <strong className="text-foreground font-medium">human resources</strong>, supervising teams at Canada&apos;s Wonderland and a hospital. I learned how <strong className="text-foreground font-medium">enterprises operate</strong> — the processes, the compliance, the politics of getting things done.
+                                Small business owners are being asked to choose between basic no-code automations and overly complex enterprise tooling. You should not have to pick one extreme.
                             </p>
                             <p>
-                                Then I became an <strong className="text-foreground font-medium">Amazon seller</strong>. I built brands from zero to one, handled logistics, marketing, and customer service. I learned what it means to be a <strong className="text-foreground font-medium">founder</strong> — to wear every hat and make every dollar count.
+                                We design <strong className="text-foreground font-medium">custom Open Claw agent harnesses</strong> and Claude Code workflows that match your real operations: client communication, reporting, scheduling, content pipelines, and recurring admin tasks.
                             </p>
                             <p>
-                                Over the past year, I dove deep into <strong className="text-foreground font-medium">AI tools and automation</strong>. I didn&apos;t just learn them — I built a <strong className="text-foreground font-medium">profitable SaaS product at $300K ARR</strong>. I know what works, what&apos;s hype, and what actually moves the needle for a business.
+                                We also handle the hard setup work most teams skip: <strong className="text-foreground font-medium">MCP and API connectors, permissions, testing, and deployment readiness</strong>.
                             </p>
                             <p>
-                                That&apos;s why I started Copenhagen. Because Toronto&apos;s small and medium businesses deserve someone who <strong className="text-foreground font-medium">speaks both languages</strong> — the language of business operations and the language of AI. Someone who can look at your workflow, find the bottleneck, and <strong className="text-foreground font-medium">implement a solution that week</strong>.
+                                The goal is simple: give owners a reliable AI operating layer that removes bottlenecks and keeps compounding over time.
                             </p>
                         </div>
                     </motion.div>
