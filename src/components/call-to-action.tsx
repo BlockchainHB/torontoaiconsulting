@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Container, Separator } from '@/components/container'
 import Image from 'next/image'
+import { CAL_BOOKING_LINK } from '@/lib/const'
 
 export function CallToAction() {
     return (
@@ -39,7 +40,7 @@ export function CallToAction() {
                                 asChild
                                 size="lg"
                                 className="border-transparent px-5 text-sm shadow-xl shadow-indigo-900/40">
-                                <Link href="#">Book My Workflow Call</Link>
+                                <Link href={CAL_BOOKING_LINK}>Book My Workflow Call</Link>
                             </Button>
                             <span className="text-foreground/75 mt-3 block text-center text-sm">Built for owner-led SMB teams using advanced AI tools</span>
                         </div>

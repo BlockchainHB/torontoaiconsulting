@@ -7,7 +7,7 @@ import { FeatureCard, FeatureCardContent } from '@/components/ui/feature-card'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Check, Search, Workflow, Handshake } from 'lucide-react'
-import { HASAAM_AVATAR } from '@/lib/const'
+import { CAL_BOOKING_LINK, HASAAM_AVATAR } from '@/lib/const'
 import Image from 'next/image'
 
 export function PlatformFeatures() {
@@ -44,7 +44,7 @@ export function PlatformFeatures() {
                             variant="outline"
                             size="sm"
                             className="mt-auto w-fit">
-                            <Link href="#book-call">Map My Workflow Gaps</Link>
+                            <Link href={CAL_BOOKING_LINK}>Map My Workflow Gaps</Link>
                         </Button>
                     </FeatureCardContent>
                 </FeatureCard>
@@ -99,7 +99,7 @@ export function PlatformFeatures() {
                             variant="outline"
                             size="sm"
                             className="mt-auto w-fit">
-                            <Link href="#book-call">Build My First Workflow</Link>
+                            <Link href={CAL_BOOKING_LINK}>Build My First Workflow</Link>
                         </Button>
                     </FeatureCardContent>
                 </FeatureCard>
@@ -138,7 +138,7 @@ export function PlatformFeatures() {
                             variant="outline"
                             size="sm"
                             className="mt-auto w-fit">
-                            <Link href="#book-call">Design My Agent Stack</Link>
+                            <Link href={CAL_BOOKING_LINK}>Design My Agent Stack</Link>
                         </Button>
                     </FeatureCardContent>
                 </FeatureCard>

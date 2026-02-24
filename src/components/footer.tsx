@@ -1,6 +1,7 @@
 import { Logo } from '@/components/logo'
 import Link from 'next/link'
 import { Container, Separator } from '@/components/container'
+import { CAL_BOOKING_LINK } from '@/lib/const'
 
 const links = [
     {
@@ -17,7 +18,7 @@ const links = [
         items: [
             { title: 'About', href: '#about' },
             { title: 'How It Works', href: '#how-it-works' },
-            { title: 'Book a Call', href: '#book-call' },
+            { title: 'Book a Call', href: CAL_BOOKING_LINK },
         ],
     },
 ]

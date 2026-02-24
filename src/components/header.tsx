@@ -6,6 +6,7 @@ import React from 'react'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Container } from '@/components/container'
+import { CAL_BOOKING_LINK } from '@/lib/const'
 
 const navLinks = [
     { name: 'Services', href: '#services' },
@@ -101,7 +102,7 @@ export default function Header() {
                                     asChild
                                     size="sm"
                                     className="border-transparent shadow-xl shadow-indigo-900/40">
-                                    <Link href="#book-call">
+                                    <Link href={CAL_BOOKING_LINK}>
                                         <span>Book a Free Call</span>
                                     </Link>
                                 </Button>

@@ -4,5 +4,6 @@ const BERNARD_AVATAR = 'https://avatars.githubusercontent.com/u/31113941?v=4'
 const THEO_AVATAR = 'https://avatars.githubusercontent.com/u/68236786?v=4'
 const GLODIE_AVATAR = 'https://avatars.githubusercontent.com/u/99137927?v=4'
 const SHADCN_AVATAR = 'https://avatars.githubusercontent.com/u/124599?v=4'
+const CAL_BOOKING_LINK = 'https://cal.com/hasaam/30min'
 
-export { HASAAM_AVATAR, BERNARD_AVATAR, GLODIE_AVATAR, THEO_AVATAR, MESCHAC_AVATAR, SHADCN_AVATAR }
+export { HASAAM_AVATAR, BERNARD_AVATAR, GLODIE_AVATAR, THEO_AVATAR, MESCHAC_AVATAR, SHADCN_AVATAR, CAL_BOOKING_LINK }

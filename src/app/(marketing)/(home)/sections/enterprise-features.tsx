@@ -4,6 +4,7 @@ import { FeatureCard, FeatureCardContent } from '@/components/ui/feature-card'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { AgentWorkflowIllustration } from '@/components/illustrations/agent-workflow'
+import { CAL_BOOKING_LINK } from '@/lib/const'
 
 const credentials = [
     {
@@ -62,7 +63,7 @@ export function EnterpriseFeatures() {
                                     variant="outline"
                                     size="sm"
                                     className="mt-auto w-fit">
-                                    <Link href="#book-call">See If This Fits</Link>
+                                    <Link href={CAL_BOOKING_LINK}>See If This Fits</Link>
                                 </Button>
                             </FeatureCardContent>
                         </FeatureCard>
