@@ -1,4 +1,5 @@
 import React from 'react'
+import type { Metadata } from 'next'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { LogoCloud } from '@/components/logo-cloud'
@@ -16,10 +17,60 @@ import { FeatureCardDescription, FeatureCardTitle } from '@/components/ui/featur
 import { EnterpriseFeatures } from '@/app/(marketing)/(home)/sections/enterprise-features'
 import Image from 'next/image'
 import { CAL_BOOKING_LINK } from '@/lib/const'
+import { siteDescription, siteName, siteUrl } from '@/lib/seo'
+
+export const metadata: Metadata = {
+    title: 'Build Your AI Operations Stack',
+    description: siteDescription,
+    keywords: [
+        'AI consulting Toronto',
+        'AI automation services',
+        'Open Claw agent setup',
+        'Claude Code workflows',
+        'MCP connector implementation',
+    ],
+    alternates: {
+        canonical: '/',
+    },
+    openGraph: {
+        title: `${siteName} | AI Consulting for Toronto Businesses`,
+        description: siteDescription,
+        url: '/',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: `${siteName} | AI Consulting for Toronto Businesses`,
+        description: siteDescription,
+    },
+}
 
 export default function Home() {
+    const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'ProfessionalService',
+        name: siteName,
+        description: siteDescription,
+        areaServed: {
+            '@type': 'City',
+            name: 'Toronto',
+        },
+        serviceType: [
+            'AI strategy consulting',
+            'Workflow automation implementation',
+            'Open Claw agent setup',
+            'Claude Code workflow development',
+        ],
+        url: siteUrl,
+        sameAs: ['https://x.com/hasaamb', 'https://github.com/blockchainhb', 'https://hasaamb.com'],
+    }
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
             <section
                 id="home"
                 className="overflow-hidden">
