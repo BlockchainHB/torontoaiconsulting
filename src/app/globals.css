@@ -130,4 +130,29 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 100;
+    border-radius: var(--radius-sm);
+    background: var(--color-background);
+    color: var(--color-foreground);
+    padding: 0.5rem 0.75rem;
+    transform: translateY(-140%);
+    transition: transform 0.2s ease;
+  }
+
+  .skip-link:focus-visible {
+    transform: translateY(0);
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
 }

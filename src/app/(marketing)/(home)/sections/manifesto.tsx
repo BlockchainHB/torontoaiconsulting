@@ -1,6 +1,6 @@
 'use client'
 import { Plus, Minus } from 'lucide-react'
-import { motion } from 'motion/react'
+import { motion, useReducedMotion } from 'motion/react'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -8,6 +8,7 @@ import { Container } from '@/components/container'
 
 export function Manifesto() {
     const [isFull, setIsFull] = useState(false)
+    const prefersReducedMotion = useReducedMotion()
     return (
         <section id="about">
             <Container className="border-t-0 py-16 max-lg:px-6 lg:py-24">
@@ -16,8 +17,12 @@ export function Manifesto() {
                     className="relative mx-auto max-w-2xl">
                     <motion.div
                         className={cn('relative overflow-hidden', !isFull && 'mask-b-from-45%')}
-                        initial={{ height: '22rem' }}
-                        animate={{ height: isFull ? 'auto' : '22rem' }}
+                        initial={prefersReducedMotion ? undefined : { height: '22rem' }}
+                        animate={
+                            prefersReducedMotion
+                                ? undefined
+                                : { height: isFull ? 'auto' : '22rem' }
+                        }
                         exit={{ height: '22rem' }}>
                         <div className="text-muted-foreground space-y-4 text-xl *:leading-relaxed md:text-2xl">
                             <p>

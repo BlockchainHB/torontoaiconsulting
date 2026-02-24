@@ -57,16 +57,27 @@ export default function Header() {
                             </Link>
 
                             <button
+                                type="button"
                                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                                 aria-label={isMobileMenuOpen == true ? 'Close Menu' : 'Open Menu'}
+                                aria-expanded={isMobileMenuOpen}
+                                aria-controls="mobile-nav-menu"
                                 className="relative z-20 -m-2.5 -mr-3 block cursor-pointer p-2.5 lg:hidden">
-                                <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-5 duration-200" />
-                                <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-5 -rotate-180 scale-0 opacity-0 duration-200" />
+                                <Menu
+                                    aria-hidden="true"
+                                    className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-5 duration-200"
+                                />
+                                <X
+                                    aria-hidden="true"
+                                    className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-5 -rotate-180 scale-0 opacity-0 duration-200"
+                                />
                             </button>
                         </div>
 
                         {/* Desktop nav - CSS hidden on mobile */}
-                        <nav className="absolute inset-0 m-auto size-fit max-lg:hidden">
+                        <nav
+                            aria-label="Primary"
+                            className="absolute inset-0 m-auto size-fit max-lg:hidden">
                             <ul className="flex items-center gap-8">
                                 {navLinks.map((link) => (
                                     <li key={link.name}>
@@ -81,7 +92,10 @@ export default function Header() {
                         </nav>
 
                         {/* Mobile nav - CSS hidden on desktop, shown via data-state */}
-                        <nav className="w-full py-6 in-data-[state=inactive]:hidden lg:hidden">
+                        <nav
+                            id="mobile-nav-menu"
+                            aria-label="Mobile"
+                            className="w-full py-6 in-data-[state=inactive]:hidden lg:hidden">
                             <ul className="space-y-4">
                                 {navLinks.map((link) => (
                                     <li key={link.name}>
