@@ -16,7 +16,7 @@ export default function BlogPage() {
                 />
                 <div
                     aria-hidden="true"
-                    className="pointer-events-none absolute inset-x-0 top-0 z-10 h-12 bg-white"
+                    className="pointer-events-none absolute inset-x-0 top-0 z-10 h-32 bg-white"
                 />
             </div>
         </section>
