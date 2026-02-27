@@ -2,7 +2,7 @@ export default function BlogPage() {
     const embeddedChromeOffset = '20rem'
 
     return (
-        <section className="pt-14">
+        <section className="bg-indigo-900/10 pt-14">
             <div className="relative h-[calc(100dvh-3.5rem)] overflow-hidden">
                 <iframe
                     src="https://pro-pages.tailark.com/grid-1/blog-one"
