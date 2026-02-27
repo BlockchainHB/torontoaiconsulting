@@ -18,6 +18,7 @@ const links = [
         items: [
             { title: 'About', href: '#about' },
             { title: 'How It Works', href: '#how-it-works' },
+            { title: 'Blog', href: '/blog' },
             { title: 'Book a Call', href: CAL_BOOKING_LINK },
         ],
     },
