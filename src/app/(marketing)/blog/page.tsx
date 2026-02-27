@@ -1,5 +1,5 @@
 export default function BlogPage() {
-    const embeddedChromeOffset = '16rem'
+    const embeddedChromeOffset = '20rem'
 
     return (
         <section className="pt-14">
@@ -13,10 +13,6 @@ export default function BlogPage() {
                         transform: `translateY(-${embeddedChromeOffset})`,
                         marginBottom: `-${embeddedChromeOffset}`,
                     }}
-                />
-                <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute inset-x-0 top-0 z-10 h-32 bg-white"
                 />
             </div>
         </section>
