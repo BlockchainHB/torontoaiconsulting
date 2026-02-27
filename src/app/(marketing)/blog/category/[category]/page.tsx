@@ -42,7 +42,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
 
     const categoryTitle = posts[0]?.category?.title || category
 
-    / Create a bound server action
+    // Create a bound server action
     const loadMoreAction = loadMoreCategoryPosts.bind(null, category)
 
     return (
