@@ -1,5 +1,5 @@
 export default function BlogPage() {
-    const embeddedChromeOffset = '20rem'
+    const embeddedChromeOffset = '21rem'
 
     return (
         <section className="bg-indigo-900/10 pt-14">
