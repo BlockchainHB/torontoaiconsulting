@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   description: siteDescription,
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
   },
   openGraph: {
     type: "website",
@@ -57,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-CA">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

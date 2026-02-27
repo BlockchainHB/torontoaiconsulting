@@ -20,12 +20,12 @@ import { CAL_BOOKING_LINK } from '@/lib/const'
 import { siteDescription, siteName, siteUrl } from '@/lib/seo'
 
 export const metadata: Metadata = {
-    title: 'Build Your AI Operations Stack',
+    title: 'AI Consulting Toronto | Build Your AI Operations Stack',
     description: siteDescription,
     keywords: [
         'AI consulting Toronto',
         'AI automation services',
-        'Open Claw agent setup',
+        'OpenClaw agent setup',
         'Claude Code workflows',
         'MCP connector implementation',
     ],

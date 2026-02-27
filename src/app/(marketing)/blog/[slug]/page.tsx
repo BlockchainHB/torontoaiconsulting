@@ -2,6 +2,7 @@ import { getPostBySlug, getAllSlugs, getAllPosts } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { siteUrl } from "@/lib/seo";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -17,12 +18,16 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: post.title,
     description: post.excerpt,
     keywords: post.keywords,
+    alternates: {
+      canonical: `${siteUrl}/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
       tags: post.tags,
+      url: `${siteUrl}/blog/${slug}`,
       ...(post.image && {
         images: [{ url: post.image, width: 1200, height: 675, alt: post.title }],
       }),
@@ -47,7 +52,29 @@ export default async function PostPage({ params }: Params) {
   const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    url: `${siteUrl}/blog/${slug}`,
+    publisher: {
+      "@type": "Organization",
+      name: "Toronto AI Consulting",
+      url: siteUrl,
+    },
+    ...(post.image && { image: { "@type": "ImageObject", url: `${siteUrl}${post.image}` } }),
+    keywords: post.keywords.join(", "),
+  };
+
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+    />
     <article>
       <header className="mb-10">
         <Link
@@ -125,5 +152,6 @@ export default async function PostPage({ params }: Params) {
         </div>
       </nav>
     </article>
+    </>
   );
 }

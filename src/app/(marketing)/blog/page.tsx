@@ -2,11 +2,22 @@ import { getAllPosts } from "@/lib/posts";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import BlogList from "./BlogList";
+import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "AI Consulting Blog | Guides, Automation & AI Strategy",
   description:
-    "Toronto AI Consulting blog — AI strategy, automation guides, and insights for Canadian businesses.",
+    "Practical AI guides, automation tutorials, and strategy insights from Toronto AI Consulting. Learn how to implement AI workflows, agents, and tools for your business.",
+  alternates: {
+    canonical: `${siteUrl}/blog`,
+  },
+  openGraph: {
+    title: "AI Consulting Blog | Guides, Automation & AI Strategy",
+    description:
+      "Practical AI guides, automation tutorials, and strategy insights from Toronto AI Consulting.",
+    url: `${siteUrl}/blog`,
+    type: "website",
+  },
 };
 
 export default function BlogIndex() {
@@ -23,7 +34,7 @@ export default function BlogIndex() {
   return (
     <div>
       <h1 className="text-2xl font-bold tracking-tight text-white mb-2">
-        Blog
+        AI Consulting Blog
       </h1>
       <p className="text-[#737373] mb-8">
         Guides, tutorials, and AI insights from Toronto AI Consulting.
