@@ -1,5 +1,5 @@
 export default function BlogPage() {
-    const embeddedChromeOffset = '11rem'
+    const embeddedChromeOffset = '16rem'
 
     return (
         <section className="pt-14">
