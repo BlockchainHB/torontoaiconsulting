@@ -3,7 +3,7 @@ export default function BlogPage() {
 
     return (
         <section className="pt-14">
-            <div className="h-[calc(100dvh-3.5rem)] overflow-hidden">
+            <div className="relative h-[calc(100dvh-3.5rem)] overflow-hidden">
                 <iframe
                     src="https://pro-pages.tailark.com/grid-1/blog-one"
                     title="Grid 1 blog one"
@@ -13,6 +13,10 @@ export default function BlogPage() {
                         transform: `translateY(-${embeddedChromeOffset})`,
                         marginBottom: `-${embeddedChromeOffset}`,
                     }}
+                />
+                <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-x-0 top-0 z-10 h-12 bg-white"
                 />
             </div>
         </section>
