@@ -1,5 +1,5 @@
 export default function BlogPage() {
-    const embeddedNavOffset = '3.5rem'
+    const embeddedChromeOffset = '11rem'
 
     return (
         <section className="pt-14">
@@ -7,8 +7,12 @@ export default function BlogPage() {
                 <iframe
                     src="https://pro-pages.tailark.com/grid-1/blog-one"
                     title="Grid 1 blog one"
-                    className="h-[calc(100%+3.5rem)] w-full -translate-y-14 border-0"
-                    style={{ marginBottom: `-${embeddedNavOffset}` }}
+                    className="w-full border-0"
+                    style={{
+                        height: `calc(100% + ${embeddedChromeOffset})`,
+                        transform: `translateY(-${embeddedChromeOffset})`,
+                        marginBottom: `-${embeddedChromeOffset}`,
+                    }}
                 />
             </div>
         </section>
