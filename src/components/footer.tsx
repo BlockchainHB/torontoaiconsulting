@@ -1,25 +1,43 @@
 import { Logo } from '@/components/logo'
 import Link from 'next/link'
-import { Container, Separator } from '@/components/container'
-import { CAL_BOOKING_LINK } from '@/lib/const'
 
 const links = [
     {
-        group: 'Services',
+        group: 'Product',
         items: [
-            { title: 'AI Strategy & Audit', href: '#services' },
-            { title: 'Workflow Automation', href: '#services' },
-            { title: '1-on-1 Implementation', href: '#services' },
-            { title: 'Pricing', href: '#pricing' },
+            {
+                title: 'Features',
+                href: '#',
+            },
+            {
+                title: 'Solution',
+                href: '#',
+            },
+            {
+                title: 'Partnerships',
+                href: '#',
+            },
+            {
+                title: 'Mobile App',
+                href: '#',
+            },
         ],
     },
     {
         group: 'Company',
         items: [
-            { title: 'About', href: '#about' },
-            { title: 'How It Works', href: '#how-it-works' },
-            { title: 'Blog', href: '/blog' },
-            { title: 'Book a Call', href: CAL_BOOKING_LINK },
+            {
+                title: 'About',
+                href: '#',
+            },
+            {
+                title: 'Licence',
+                href: '#',
+            },
+            {
+                title: 'Privacy',
+                href: '#',
+            },
         ],
     },
 ]
@@ -28,16 +46,10 @@ export default function FooterSection() {
     return (
         <footer
             role="contentinfo"
-            className="bg-indigo-900/10">
-            <Container>
-                <div className="h-12"></div>
-            </Container>
-
-            <Container asGrid>
-                <div className="@4xl:grid-cols-5 grid gap-px">
-                    <div
-                        data-grid-content
-                        className="@4xl:col-span-2 space-y-6 p-6 lg:p-12">
+            className="py-8 sm:py-20 lg:pt-32">
+            <div className="mx-auto max-w-6xl space-y-16 px-6 lg:px-12">
+                <div className="grid gap-12 md:grid-cols-5">
+                    <div className="space-y-6 md:col-span-2 md:space-y-12">
                         <Link
                             href="/"
                             aria-label="go home"
@@ -45,15 +57,14 @@ export default function FooterSection() {
                             <Logo />
                         </Link>
 
-                        <p className="text-muted-foreground text-balance">Hands-on AI consulting for small and medium businesses in Toronto. From strategy to implementation.</p>
+                        <p className="text-muted-foreground text-balance text-sm">Tailark is a platform for building AI-powered applications.</p>
                     </div>
 
-                    <div className="@4xl:col-span-3 grid gap-px sm:grid-cols-3">
+                    <div className="col-span-3 grid gap-6 sm:grid-cols-3">
                         {links.map((link, index) => (
                             <div
                                 key={index}
-                                data-grid-content
-                                className="space-y-4 p-6 text-sm lg:p-12">
+                                className="space-y-4 text-sm">
                                 <span className="block font-medium">{link.group}</span>
 
                                 <div className="flex flex-wrap gap-4 sm:flex-col">
@@ -61,7 +72,7 @@ export default function FooterSection() {
                                         <Link
                                             key={index}
                                             href={item.href}
-                                            className="text-muted-foreground hover:text-primary flex min-h-11 items-center duration-150 sm:min-h-0">
+                                            className="text-muted-foreground hover:text-primary block duration-150">
                                             <span>{item.title}</span>
                                         </Link>
                                     ))}
@@ -69,17 +80,15 @@ export default function FooterSection() {
                             </div>
                         ))}
 
-                        <div
-                            data-grid-content
-                            className="space-y-4 p-6 lg:p-12">
-                            <span className="block font-medium">Connect</span>
+                        <div className="space-y-4">
+                            <span className="block font-medium">Community</span>
                             <div className="flex flex-wrap gap-3 text-sm">
                                 <Link
-                                    href="https://x.com/hasaamb"
+                                    href="#"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="X/Twitter"
-                                    className="text-muted-foreground hover:text-primary -m-3 flex min-h-11 min-w-11 items-center justify-center p-3">
+                                    className="text-muted-foreground hover:text-primary block">
                                     <svg
                                         className="size-5"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -92,11 +101,11 @@ export default function FooterSection() {
                                     </svg>
                                 </Link>
                                 <Link
-                                    href="https://github.com/blockchainhb"
+                                    href="#"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    aria-label="GitHub"
-                                    className="text-muted-foreground hover:text-primary -m-3 flex min-h-11 min-w-11 items-center justify-center p-3">
+                                    aria-label="LinkedIn"
+                                    className="text-muted-foreground hover:text-primary block">
                                     <svg
                                         className="size-5"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -105,40 +114,29 @@ export default function FooterSection() {
                                         viewBox="0 0 24 24">
                                         <path
                                             fill="currentColor"
-                                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path>
+                                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"></path>
                                     </svg>
                                 </Link>
-                                <Link
-                                    href="https://hasaamb.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Personal Website"
-                                    className="text-muted-foreground hover:text-primary flex min-h-11 items-center text-xs leading-5">
-                                    hasaamb.com
-                                </Link>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div
-                        data-grid-content
-                        className="flex flex-wrap items-center justify-between gap-4 p-6 lg:px-12">
-                        <span className="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} Toronto AI Consulting. All rights reserved.</span>
+                <div
+                    aria-hidden
+                    className="bg-size-[6px_1px] h-px bg-[linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] bg-repeat-x opacity-25"
+                />
+                <div className="flex flex-wrap justify-between gap-4">
+                    <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Tailark, All rights reserved </span>
 
-                        <div className="ring-foreground/5 bg-card flex items-center gap-2 rounded-full border border-transparent py-1 pl-2 pr-4 shadow ring-1">
-                            <div className="relative flex size-3">
-                                <span className="duration-1500 absolute inset-0 block size-full animate-pulse rounded-full bg-emerald-100"></span>
-                                <span className="relative m-auto block size-1 rounded-full bg-emerald-500"></span>
-                            </div>
-                            <span className="text-sm">Accepting New Clients</span>
+                    <div className="ring-foreground/5 bg-card flex items-center gap-2 rounded-full border border-transparent py-1 pl-2 pr-4 shadow ring-1">
+                        <div className="relative flex size-3">
+                            <span className="duration-1500 absolute inset-0 block size-full animate-pulse rounded-full bg-emerald-100"></span>
+                            <span className="relative m-auto block size-1 rounded-full bg-emerald-500"></span>
                         </div>
+                        <span className="text-sm">All Systems Normal</span>
                     </div>
                 </div>
-            </Container>
-
-            <Separator className="h-6" />
-            <Separator className="h-12" />
+            </div>
         </footer>
     )
 }

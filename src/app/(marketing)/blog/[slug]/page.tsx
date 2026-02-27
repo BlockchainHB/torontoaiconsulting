@@ -1,157 +1,145 @@
-import { getPostBySlug, getAllSlugs, getAllPosts } from "@/lib/posts";
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import Link from "next/link";
-import { siteUrl } from "@/lib/seo";
-
-type Params = { params: Promise<{ slug: string }> };
+import Image from 'next/image'
+import { notFound } from 'next/navigation'
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from '@/components/ui/breadcrumb'
+import { formatDate } from '@/lib/format-date'
+import { getPostBySlug, getAllPostSlugs } from '@/lib/actions'
+import { siteUrl } from '@/lib/seo'
 
 export async function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+    const posts = await getAllPostSlugs()
+    return posts.map((post) => ({
+        slug: post.slug,
+    }))
 }
 
-export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { slug } = await params;
-  const post = await getPostBySlug(slug);
-  if (!post) return {};
-  return {
-    title: post.title,
-    description: post.excerpt,
-    keywords: post.keywords,
-    alternates: {
-      canonical: `${siteUrl}/blog/${slug}`,
-    },
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: "article",
-      publishedTime: post.date,
-      tags: post.tags,
-      url: `${siteUrl}/blog/${slug}`,
-      ...(post.image && {
-        images: [{ url: post.image, width: 1200, height: 675, alt: post.title }],
-      }),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
-      ...(post.image && { images: [post.image] }),
-    },
-  };
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params
+    const post = await getPostBySlug(slug)
+
+    if (!post) {
+        return { title: 'Post Not Found' }
+    }
+
+    return {
+        title: post.title,
+        description: post.description,
+        alternates: {
+            canonical: `${siteUrl}/blog/${slug}`,
+        },
+        openGraph: {
+            title: post.title,
+            description: post.description,
+            type: 'article',
+            publishedTime: post.publishedAt,
+            url: `${siteUrl}/blog/${slug}`,
+            ...(post.image && {
+                images: [{ url: post.image, width: 1200, height: 675, alt: post.title }],
+            }),
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: post.description,
+            ...(post.image && { images: [post.image] }),
+        },
+    }
 }
 
-export default async function PostPage({ params }: Params) {
-  const { slug } = await params;
-  const post = await getPostBySlug(slug);
-  if (!post) notFound();
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params
+    const post = await getPostBySlug(slug)
 
-  // Get adjacent posts for navigation
-  const allPosts = getAllPosts();
-  const currentIndex = allPosts.findIndex((p) => p.slug === slug);
-  const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
-  const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+    if (!post) {
+        notFound()
+    }
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.excerpt,
-    datePublished: post.date,
-    dateModified: post.date,
-    url: `${siteUrl}/blog/${slug}`,
-    publisher: {
-      "@type": "Organization",
-      name: "Toronto AI Consulting",
-      url: siteUrl,
-    },
-    ...(post.image && { image: { "@type": "ImageObject", url: `${siteUrl}${post.image}` } }),
-    keywords: post.keywords.join(", "),
-  };
+    const articleSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: post.title,
+        description: post.description,
+        datePublished: post.publishedAt,
+        dateModified: post.publishedAt,
+        url: `${siteUrl}/blog/${slug}`,
+        publisher: {
+            '@type': 'Organization',
+            name: 'Toronto AI Consulting',
+            url: siteUrl,
+        },
+        ...(post.image && { image: { '@type': 'ImageObject', url: `${siteUrl}${post.image}` } }),
+    }
 
-  return (
-    <>
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-    />
-    <article>
-      <header className="mb-10">
-        <Link
-          href="/blog"
-          className="text-sm text-[#525252] hover:text-[#737373] transition-colors"
-        >
-          ← back
-        </Link>
-        <div className="flex items-center gap-3 mt-6 mb-2">
-          <time className="text-sm text-[#525252] font-mono">{post.date}</time>
-          <span className="text-sm text-[#525252]">·</span>
-          <span className="text-sm text-[#525252]">
-            {post.readingTime} min read
-          </span>
-        </div>
-        <h1 className="text-3xl font-bold tracking-tight text-white mt-2">
-          {post.title}
-        </h1>
-        {post.image && (
-          <div className="mt-6 -mx-6 sm:-mx-0">
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full rounded-lg"
-              loading="eager"
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />
-          </div>
-        )}
-        {post.tags.length > 0 && (
-          <div className="flex gap-2 mt-4">
-            {post.tags.map((tag) => (
-              <Link
-                key={tag}
-                href={`/blog/tag/${tag}`}
-                className="text-xs font-mono text-[#525252] bg-[#111111] px-2 py-0.5 rounded hover:text-white transition-colors"
-              >
-                {tag}
-              </Link>
-            ))}
-          </div>
-        )}
-      </header>
-      <div
-        className="prose"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+            <div className="relative mx-auto max-w-6xl px-6 lg:px-12">
+                <div className="grid max-lg:gap-4 lg:grid-cols-[1fr_auto_1fr]">
+                    <Breadcrumb>
+                        <BreadcrumbList>
+                            <BreadcrumbItem>
+                                <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbSeparator />
+                            <BreadcrumbItem>
+                                <BreadcrumbLink href={`/blog/category/${post.category.slug}`}>{post.category.title}</BreadcrumbLink>
+                            </BreadcrumbItem>
+                        </BreadcrumbList>
+                    </Breadcrumb>
 
-      {/* Post navigation */}
-      <nav className="mt-16 pt-8 border-t border-[#1a1a1a]">
-        <div className="flex justify-between gap-8">
-          <div className="flex-1">
-            {prevPost && (
-              <Link href={`/blog/${prevPost.slug}`} className="group block">
-                <span className="text-xs text-[#525252] uppercase tracking-wider">
-                  ← Previous
-                </span>
-                <p className="text-sm text-[#737373] group-hover:text-white transition-colors mt-1 line-clamp-1">
-                  {prevPost.title}
-                </p>
-              </Link>
-            )}
-          </div>
-          <div className="flex-1 text-right">
-            {nextPost && (
-              <Link href={`/blog/${nextPost.slug}`} className="group block">
-                <span className="text-xs text-[#525252] uppercase tracking-wider">
-                  Next →
-                </span>
-                <p className="text-sm text-[#737373] group-hover:text-white transition-colors mt-1 line-clamp-1">
-                  {nextPost.title}
-                </p>
-              </Link>
-            )}
-          </div>
-        </div>
-      </nav>
-    </article>
-    </>
-  );
+                    <article className="max-w-2xl">
+                        <header className="mb-8">
+                            <time
+                                className="text-muted-foreground text-sm"
+                                dateTime={new Date(post.publishedAt).toISOString()}>
+                                {formatDate(post.publishedAt)}
+                            </time>
+                            <h1 className="text-foreground mt-6 text-balance text-3xl font-semibold md:text-4xl md:leading-tight">{post.title}</h1>
+                        </header>
+
+                        <div className="max-w-2xl">
+                            {post.image && (
+                                <div className="relative overflow-hidden rounded-xl border shadow shadow-black/5">
+                                    <Image
+                                        src={post.image}
+                                        alt={post.title}
+                                        width={1200}
+                                        height={675}
+                                        className="aspect-video w-full object-cover"
+                                        priority
+                                    />
+                                </div>
+                            )}
+
+                            <div className="mb-12 flex flex-wrap items-center gap-4 border-b py-6">
+                                {post.authors.map((author, index) => (
+                                    <div
+                                        key={index}
+                                        className="grid grid-cols-[auto_1fr] items-center gap-2">
+                                        <div className="ring-border-illustration bg-card aspect-square size-6 overflow-hidden rounded-md border border-transparent shadow-md shadow-black/15 ring-1">
+                                            <Image
+                                                src={author.image}
+                                                alt={author.name}
+                                                width={460}
+                                                height={460}
+                                                className="size-full object-cover"
+                                            />
+                                        </div>
+                                        <span className="text-foreground line-clamp-1 text-sm">{author.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div
+                                className="prose prose-slate dark:prose-invert max-w-none"
+                                dangerouslySetInnerHTML={{ __html: post.body }}
+                            />
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </>
+    )
 }
